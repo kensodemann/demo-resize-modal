@@ -1,0 +1,7 @@
+{
+  "name": "demo-modal",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
