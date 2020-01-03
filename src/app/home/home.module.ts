@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { ModalOneComponentModule } from '../modal-one/modal-one.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ModalOneComponentModule,
     RouterModule.forChild([
       {
         path: '',

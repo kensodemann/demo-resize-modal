@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Modal One</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button id="cancel-button" (click)="close()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<div class="inner-content">
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-label>{{item}}</ion-label>
+    </ion-item>
+  </ion-list>
+</div>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button (click)="showMore()">Show More</ion-button>
+    <ion-button (click)="showLess()">Show Less</ion-button>
+  </ion-toolbar>
+</ion-footer>
